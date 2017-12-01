@@ -29,6 +29,4 @@ function placeholders() {
 		};
 	};
 };
-
-window.onload = placeholders;
 // End
