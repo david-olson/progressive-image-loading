@@ -1,0 +1,35 @@
+{
+  "name": "progressive-image-loading",
+  "version": "1.0.0",
+  "description": "A component to allow blurry to full-res ajax image loading.",
+  "main": "progressive-image-loading/src/progressive-image-loading.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-olson/progressive-image-loading.git"
+  },
+  "keywords": [
+    "Images",
+    "Blur",
+    "Ajax",
+    "Load"
+  ],
+  "author": "David Olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-olson/progressive-image-loading/issues"
+  },
+  "homepage": "https://github.com/david-olson/progressive-image-loading#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9"
+  }
+}
