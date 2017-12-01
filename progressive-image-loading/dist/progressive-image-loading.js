@@ -1,6 +1,5 @@
-var placeholders = document.getElementsByClassName('pil-placeholder');
-window.onload = function() {
-
+function placeholders() {
+	var placeholders = document.getElementsByClassName('pil-placeholder');
 	if (placeholders !== null && placeholders !== undefined && placeholders !== false) {
 		for (i = 0; i < placeholders.length; i++) {
 			var small = placeholders[i].getElementsByTagName('img')[0];
@@ -27,7 +26,9 @@ window.onload = function() {
 				this.classList.add('loaded');
 			}
 			placeholders[i].appendChild(imgLarge);
-		}
-	}
-	
-}
+		};
+	};
+};
+
+window.onload = placeholders;
+// End

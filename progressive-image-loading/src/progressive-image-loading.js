@@ -1,4 +1,4 @@
-(function placeholders() {
+function placeholders() {
 	var placeholders = document.getElementsByClassName('pil-placeholder');
 	if (placeholders !== null && placeholders !== undefined && placeholders !== false) {
 		for (i = 0; i < placeholders.length; i++) {
@@ -30,4 +30,5 @@
 	};
 };
 
-window.onload = placeholders());
+window.onload = placeholders;
+// End
