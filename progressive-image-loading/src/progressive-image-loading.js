@@ -1,6 +1,5 @@
 var placeholders = document.getElementsByClassName('pil-placeholder');
 window.onload = function() {
-
 	if (placeholders !== null && placeholders !== undefined && placeholders !== false) {
 		for (i = 0; i < placeholders.length; i++) {
 			var small = placeholders[i].getElementsByTagName('img')[0];
@@ -29,5 +28,4 @@ window.onload = function() {
 			placeholders[i].appendChild(imgLarge);
 		}
 	}
-	
-}
+};
