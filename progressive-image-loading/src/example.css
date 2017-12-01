@@ -5,6 +5,15 @@
 	text-align: center;
 }
 
+h1 {
+	font-family: 'Barlow Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Inconsolata', monospace;
+}
+
 .col-4 {
 	grid-column: span 4;
 }
