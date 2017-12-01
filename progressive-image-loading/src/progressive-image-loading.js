@@ -26,8 +26,8 @@ function placeholders() {
 				this.classList.add('loaded');
 			}
 			placeholders[i].appendChild(imgLarge);
-		}
-	}
-}
+		};
+	};
+};
 
 window.onload = placeholders();
