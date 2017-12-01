@@ -28,5 +28,38 @@ function placeholders() {
 			placeholders[i].appendChild(imgLarge);
 		};
 	};
+	var placeholdersBg = document.getElementsByClassName('pil-background');
+	if (placeholdersBg !== null && placeholdersBg !== undefined && placeholdersBg !== false) {
+		for (x = 0; x < placeholdersBg.length; x++) {
+			var smallbg = placeholdersBg[x].dataset.small;
+			var largebg = placeholdersBg[x].dataset.large;
+			var newClass = 'pil-placeholder-' + x;
+			placeholdersBg[x].classList.add(newClass);
+			placeholdersBg[x].classList.add('preloaded');
+
+			var phbg = placeholdersBg[x];
+
+			var memImage = new Image();
+			memImage.src = largebg;
+			memImage.onload = function() {
+				phbg.classList.add('loaded');
+			}
+
+			var css = '.'+newClass+':before {background-image: url("'+ smallbg +'")}'+' .'+newClass+'.loaded:before {background-image: url("'+largebg+'");';
+			var head = document.head || document.getElementsByTagName('head')[0];
+			var style = document.createElement('style');
+
+			style.type = 'text/css';
+			if(style.styleShet) {
+				style.styleSheet.cssText = css;
+			} else {
+				style.appendChild(document.createTextNode(css));
+			}
+			head.appendChild(style);
+			var styleLarge = document.createElement('style');
+			styleLarge.type = 'text/css';
+
+		}
+	}
 };
 // End

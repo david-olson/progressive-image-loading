@@ -5,7 +5,7 @@
 	text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Barlow Condensed', sans-serif;
 	text-transform: uppercase;
 }
@@ -28,4 +28,16 @@ p {
 
 .col-1 {
 	grid-column: span 1;
+}
+
+.pil-bg-padded {
+	padding: 200px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.pil-bg-padded h2 {
+	color: #ffffff;
 }
