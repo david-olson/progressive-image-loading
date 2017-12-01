@@ -3,7 +3,7 @@
   "homepage": "https://github.com/david-olson/progressive-image-loading",
   "description": "A bower component to allow blurry to full-res ajax image loading",
   "main": [
-    "progressive-image-loading/dist/progressive-image-loading.min.js",
+    "progressive-image-loading/dist/progressive-image-loading.js",
     "progressive-image-loading/dist/progressive-image-loading.css"
   ],
   "keywords": [
