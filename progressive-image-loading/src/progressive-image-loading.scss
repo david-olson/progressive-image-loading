@@ -1,2 +1,24 @@
 // Styles for progressive Image Loading
 
+.pil-placeholder {
+	background-color: #efefef;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	img {
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: opacity 1s linear;
+		&.loaded {
+			opacity: 1;
+		}
+		&.img-small {
+			filter: blur(50px);
+			transform: scale(1);
+		}
+	}
+}

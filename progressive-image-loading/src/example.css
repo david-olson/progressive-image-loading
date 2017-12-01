@@ -1,0 +1,22 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+	text-align: center;
+}
+
+.col-4 {
+	grid-column: span 4;
+}
+
+.col-3 {
+	grid-columns: span 3;
+}
+
+.col-2 {
+	grid-column: span 2;
+}
+
+.col-1 {
+	grid-column: span 1;
+}
