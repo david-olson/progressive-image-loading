@@ -18,8 +18,6 @@ Set the `src` of the `img` tag inside the `pil-placeholder` div to the small ver
 
 Add a div below your image called `pil-height`.
 
-Run the function `placeholders()` when the document has finished loading.
-
 ### Use With Background Images
 
 To use with a background image, add the class `pil-background` to an element that supports background images. Works best with `div` and `section`. 
@@ -27,6 +25,3 @@ To use with a background image, add the class `pil-background` to an element tha
 Add a `data-large` for the full size image that will be loaded last. Add a `data-small` for the image that will be loaded first as a blurred image. This only has to be a few pixels wide by a few pixels tall. 
 
 What happens here is a pseudo element is created in the `:before` slot of the css. The background is loaded with a size of cover, but you can override this in your own styles. Keep these things in mind if you are attempting to declare additional `:before` pseudo styles. 
-
-Run the function `placeholders()` when the document has finished loading.
-
